@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 service: "service.py:STL10Classifier"
 labels:
   owner: maciej
@@ -11,4 +12,19 @@ python:
     - pytorch-lightning==2.6.1
     - pillow
 docker:
+=======
+service: "service.py:STL10Classifier"
+labels:
+  owner: maciej
+  project: stl10
+include:
+  - "service.py"
+python:
+  packages:
+    - torch==2.6.0
+    - torchvision==0.21.0
+    - pytorch-lightning==2.6.1
+    - pillow
+docker:
+>>>>>>> 67c31a867bc2eaf808bf2b9070126c5c0b99d120
   python_version: "3.13"
